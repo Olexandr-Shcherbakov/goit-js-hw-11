@@ -16,3 +16,61 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+body {
+  font-family: sans-serif;
+  
+  
+}
+
+.form {
+  margin: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+input[name="search-text"] {
+  padding: 8px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  padding: 8px 14px;
+  font-size: 16px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  list-style: none;
+}
+
+.gallery-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  margin: 30px auto;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  border-top-color: #333;
+  animation: spin 1s linear infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
